@@ -1,0 +1,11 @@
+target
+bin
+gen
+.apt_generated
+.DS_Store
+*.ipr
+*.iws
+temp/
+lightpaper/gen-external-apklibs/
+lightpaper-test/gen-external-apklibs/
+out/
