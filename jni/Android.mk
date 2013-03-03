@@ -17,10 +17,12 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE    := anddown
+LOCAL_SHARED_LIBRARIES := DropboxSync
 LOCAL_SRC_FILES := anddown.c src/autolink.c src/buffer.c src/markdown.c src/stack.c html/houdini_href_e.c html/houdini_html_e.c html/html_smartypants.c html/html.c
 LOCAL_C_INCLUDES := jni/src jni/html
 
 include $(BUILD_SHARED_LIBRARY)
+include $(LOCAL_PATH)/libs/Android.mk
 
 #src/html_blocks.h: html_block_names.txt
 #	gperf -N find_block_tag -H hash_block_tag -C -c -E --ignore-case $^ > $@
