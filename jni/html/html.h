@@ -21,10 +21,15 @@
 #include "buffer.h"
 #include <stdlib.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 struct html_renderopt {
 	struct {
 		int header_count;
 		int current_level;
+		int level_offset;
 	} toc_data;
 
 	unsigned int flags;
@@ -43,6 +48,7 @@ typedef enum {
 	HTML_TOC = (1 << 6),
 	HTML_HARD_WRAP = (1 << 7),
 	HTML_USE_XHTML = (1 << 8),
+	HTML_ESCAPE = (1 << 9),
 } html_render_mode;
 
 typedef enum {
@@ -62,6 +68,10 @@ sdhtml_toc_renderer(struct sd_callbacks *callbacks, struct html_renderopt *optio
 
 extern void
 sdhtml_smartypants(struct buf *ob, const uint8_t *text, size_t size);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
 

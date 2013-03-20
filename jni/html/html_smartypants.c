@@ -22,6 +22,10 @@
 #include <stdio.h>
 #include <ctype.h>
 
+#if defined(_WIN32)
+#define snprintf	_snprintf		
+#endif
+
 struct smartypants_data {
 	int in_squote;
 	int in_dquote;
@@ -264,8 +268,10 @@ smartypants_cb__dquote(struct buf *ob, struct smartypants_data *smrt, uint8_t pr
 static size_t
 smartypants_cb__ltag(struct buf *ob, struct smartypants_data *smrt, uint8_t previous_char, const uint8_t *text, size_t size)
 {
-	static const char *skip_tags[] = {"pre", "code", "kbd", "script"};
-	static const size_t skip_tags_count = 4;
+	static const char *skip_tags[] = {
+	  "pre", "code", "var", "samp", "kbd", "math", "script", "style"
+	};
+	static const size_t skip_tags_count = 8;
 
 	size_t tag, i = 0;
 

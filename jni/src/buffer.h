@@ -15,12 +15,16 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#ifndef __GEN_BUFFER_H__
-#define __GEN_BUFFER_H__
+#ifndef BUFFER_H__
+#define BUFFER_H__
 
 #include <stddef.h>
 #include <stdarg.h>
 #include <stdint.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #if defined(_MSC_VER)
 #define __attribute__(x)
@@ -85,7 +89,8 @@ void bufslurp(struct buf *, size_t);
 /* bufprintf: formatted printing to a buffer */
 void bufprintf(struct buf *, const char *, ...) __attribute__ ((format (printf, 2, 3)));
 
-/* vbufprintf: stdarg variant of formatted printing into a buffer */
-void vbufprintf(struct buf *, const char * , va_list);
+#ifdef __cplusplus
+}
+#endif
 
 #endif

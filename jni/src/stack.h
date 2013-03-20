@@ -1,7 +1,11 @@
-#ifndef __CR_STACK_H__
-#define __CR_STACK_H__
+#ifndef STACK_H__
+#define STACK_H__
 
 #include <stdlib.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 struct stack {
 	void **item;
@@ -17,5 +21,9 @@ int stack_push(struct stack *, void *);
 
 void *stack_pop(struct stack *);
 void *stack_top(struct stack *);
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
