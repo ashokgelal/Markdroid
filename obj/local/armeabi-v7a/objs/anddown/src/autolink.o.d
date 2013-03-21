@@ -3,6 +3,7 @@ obj/local/armeabi-v7a/objs/anddown/src/autolink.o: jni/src/autolink.c \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/stdint.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/_types.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/machine/_types.h \
+ jni/src/autolink.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/string.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/cdefs.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/cdefs_elf.h \
@@ -31,6 +32,8 @@ jni/src/buffer.h:
 /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/sys/_types.h:
 
 /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/machine/_types.h:
+
+jni/src/autolink.h:
 
 /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/string.h:
 

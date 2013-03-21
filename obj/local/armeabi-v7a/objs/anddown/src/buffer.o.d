@@ -21,7 +21,8 @@ obj/local/armeabi-v7a/objs/anddown/src/buffer.o: jni/src/buffer.c \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/malloc.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/alloca.h \
  /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/strings.h \
- /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/memory.h
+ /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/memory.h \
+ /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/assert.h
 
 jni/src/buffer.h:
 
@@ -68,3 +69,5 @@ jni/src/buffer.h:
 /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/strings.h:
 
 /Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/memory.h:
+
+/Users/ashokgelal/Projects/tools/android-ndk-r8d/platforms/android-14/arch-arm/usr/include/assert.h:
