@@ -9,3 +9,4 @@ temp/
 lightpaper/gen-external-apklibs/
 lightpaper-test/gen-external-apklibs/
 out/
+obj/
